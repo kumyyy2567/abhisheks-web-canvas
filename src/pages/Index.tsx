@@ -1,4 +1,3 @@
-
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -89,6 +88,19 @@ const Index = () => {
             <Button variant="outline" size="lg" className="bg-white/10 border-white/20 text-white hover:bg-white/20">
               <Phone className="mr-2 h-4 w-4" />
               +91-8924062059
+            </Button>
+            <Button 
+              size="lg" 
+              className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white"
+              onClick={() => {
+                // Replace with your actual resume file path after uploading
+                const link = document.createElement('a');
+                link.href = '/resume.pdf'; // Update this path when you upload your resume
+                link.download = 'Abhishek_Kumar_Resume.pdf';
+                link.click();
+              }}
+            >
+              📄 Download Resume
             </Button>
           </motion.div>
 
@@ -338,6 +350,20 @@ const Index = () => {
               <Button variant="outline" size="lg" className="border-white/20 text-white hover:bg-white/10">
                 <Github className="mr-2 h-4 w-4" />
                 View Projects
+              </Button>
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="border-white/20 text-white hover:bg-white/10"
+                onClick={() => {
+                  // Replace with your actual resume file path after uploading
+                  const link = document.createElement('a');
+                  link.href = '/resume.pdf'; // Update this path when you upload your resume
+                  link.download = 'Abhishek_Kumar_Resume.pdf';
+                  link.click();
+                }}
+              >
+                📄 Resume
               </Button>
             </div>
           </motion.div>
