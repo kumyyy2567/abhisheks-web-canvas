@@ -93,14 +93,11 @@ const Index = () => {
               size="lg" 
               className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white"
               onClick={() => {
-                // Replace with your actual resume file path after uploading
-                const link = document.createElement('a');
-                link.href = '/resume.pdf'; // Update this path when you upload your resume
-                link.download = 'Abhishek_Kumar_Resume.pdf';
-                link.click();
+                // Open resume in new tab for viewing
+                window.open('/resume.pdf', '_blank');
               }}
             >
-              📄 Download Resume
+              📄 View Resume
             </Button>
           </motion.div>
 
@@ -356,14 +353,11 @@ const Index = () => {
                 size="lg" 
                 className="border-white/20 text-white hover:bg-white/10"
                 onClick={() => {
-                  // Replace with your actual resume file path after uploading
-                  const link = document.createElement('a');
-                  link.href = '/resume.pdf'; // Update this path when you upload your resume
-                  link.download = 'Abhishek_Kumar_Resume.pdf';
-                  link.click();
+                  // Open resume in new tab for viewing
+                  window.open('/resume.pdf', '_blank');
                 }}
               >
-                📄 Resume
+                📄 View Resume
               </Button>
             </div>
           </motion.div>
